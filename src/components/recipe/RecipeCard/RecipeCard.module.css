@@ -1,0 +1,101 @@
+.card {
+  background: white;
+  border-radius: 21px;
+  overflow: hidden;
+  box-shadow: 0 4px 34px rgba(0, 0, 0, 0.04);
+  height: 731px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  position: relative;
+  height: 253px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.timeTag {
+  position: absolute;
+  top: 21px;
+  right: 22px;
+  background: #FFD15B;
+  padding: 5px 15px;
+  border-radius: 14px;
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.content {
+  padding: 32px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: normal;
+  color: #000;
+  font-family: "Anton", sans-serif;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sectionTitle {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #7A7A7A;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.ingredients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.ingredient {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ingredientName {
+  color: #000;
+  font-weight: 500;
+}
+
+.ingredientQuantity {
+  color: #7A7A7A;
+}

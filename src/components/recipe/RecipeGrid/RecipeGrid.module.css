@@ -1,0 +1,38 @@
+.gridContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.recipeInfo {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 28px;
+}
+
+.recipeCount {
+  font-size: 18px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 21.78px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,65 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('/hero-image.jpg') center/cover no-repeat;
+  height: 667px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 51px;
+  left: 69px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  z-index: 10;
+}
+
+.logoText {
+  font-size: 36px;
+  font-weight: normal;
+  color: #FFD15B;
+  line-height: 44px;
+}
+
+.logoIcon {
+  background: #FFD15B;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.heroContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+  gap: 46px;
+}
+
+.heroText h1 {
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 66px;
+  margin: 0;
+  color: #FFD15B;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-width: 897px;
+}
+
+.searchWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
