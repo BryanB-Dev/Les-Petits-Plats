@@ -7,30 +7,6 @@
   position: relative;
 }
 
-.logo {
-  position: absolute;
-  top: 50px;
-  left: 69px;
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  z-index: 10;
-}
-
-.logoText {
-  font-family: 'Anton', sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  color: white;
-  text-transform: uppercase;
-}
-
-.logoIcon {
-  width: 23px;
-  height: 22px;
-  flex-shrink: 0;
-}
-
 .heroContent {
   flex: 1;
   display: flex;
@@ -46,7 +22,7 @@
   font-family: 'Anton', sans-serif;
   font-size: 44px;
   font-weight: 400;
-  line-height: 66px;
+  line-height: 1.5;
   margin: 0;
   color: #FFD15B;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
