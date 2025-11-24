@@ -4,10 +4,27 @@
   padding: 21px 1rem 42px;
 }
 
+.filtersWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
 .filters {
   display: flex;
-  gap: 68px;
+  gap: 63px;
   flex-wrap: wrap;
+}
+
+.recipeCount {
+  font-family: 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  color: #1B1B1B;
+  line-height: 25.41px;
+  white-space: nowrap;
 }
 
 .filterGroup {
