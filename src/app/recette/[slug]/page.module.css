@@ -4,6 +4,18 @@
   flex-direction: column;
 }
 
+.heroHeader {
+  background-image: url('/hero-image.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
 .main {
   flex: 1;
   padding-bottom: 42px;

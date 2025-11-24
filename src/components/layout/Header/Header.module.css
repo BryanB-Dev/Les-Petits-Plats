@@ -1,43 +1,37 @@
 .header {
-  background: #fff;
-  padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  padding: 42px 0 0 69px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  max-width: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 13px;
   text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.logo:hover {
-  transform: scale(1.05);
 }
 
 .logoText {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #FFD15B;
+  font-family: 'Anton', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #ffffff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 43.57px;
 }
 
 .logoIcon {
-  background: #FFD15B;
-  color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: bold;
+  width: 23px;
+  height: 22px;
+  flex-shrink: 0;
 }

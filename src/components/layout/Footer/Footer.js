@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <p className={styles.copyright}>
-          Copyright © 2021 - Les Petits Plats
+          Copyright © 2025 - Les Petits Plats
         </p>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getRecipeBySlug } from '../../../utils/recipes';
 import { RecipeHeader } from '../../../components/recipe/RecipeDetail';
-import { Footer } from '../../../components/layout';
+import { Header, Footer } from '../../../components/layout';
 import styles from './page.module.css';
 
 export async function generateMetadata({ params }) {
@@ -35,6 +35,9 @@ export default async function RecipePage({ params }) {
 
   return (
     <div className={styles.page}>
+      <div className={styles.heroHeader}>
+        <Header />
+      </div>
       <main className={styles.main}>
         <RecipeHeader recipe={recipe} />
       </main>
