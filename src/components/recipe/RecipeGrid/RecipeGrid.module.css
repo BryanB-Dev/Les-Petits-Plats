@@ -10,6 +10,17 @@
     gap: 50px;
 }
 
+.noResults {
+    text-align: center;
+    padding: 60px 20px;
+    color: #7A7A7A;
+    font-size: 18px;
+}
+
+.noResults p {
+    margin: 0 0 10px 0;
+}
+
 @media (max-width: 1024px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);

@@ -1,0 +1,48 @@
+.selectedTags {
+  margin-top: 20px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: #FFD15B;
+  border-radius: 10px;
+  padding: 17px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+  height: 53px;
+  width: 195px;
+  box-sizing: border-box;
+}
+
+.tagText {
+  color: #1B1B1B;
+  line-height: 1;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #1B1B1B;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.removeButton:hover {
+  opacity: 0.7;
+}

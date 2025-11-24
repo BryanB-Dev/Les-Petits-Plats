@@ -1,12 +1,22 @@
 import RecipeCard from '../RecipeCard';
 import styles from './RecipeGrid.module.css';
-import recipesData from '../../../data/recipes.json';
 
-export default function RecipeGrid() {
+export default function RecipeGrid({ recipes = [] }) {
+  if (recipes.length === 0) {
+    return (
+      <div className={styles.gridContainer}>
+        <div className={styles.noResults}>
+          <p>Aucune recette ne correspond à vos critères de recherche.</p>
+          <p>Vous pouvez chercher « tarte aux pommes », « poisson », etc.</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.gridContainer}>
       <div className={styles.grid}>
-        {recipesData.map(recipe => (
+        {recipes.map(recipe => (
           <RecipeCard key={recipe.id} recipe={recipe} />
         ))}
       </div>
