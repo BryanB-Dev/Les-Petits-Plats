@@ -4,11 +4,12 @@ import { useState, useEffect } from 'react';
 import { Header, Hero, Footer } from '../components/layout';
 import { FilterTags } from '../components/search';
 import { RecipeGrid } from '../components/recipe';
-import { filterRecipesByTags } from '../utils/tags';
+import { performCompleteSearch } from '../utils/search';
 import recipesData from '../data/recipes.json';
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [searchTerm, setSearchTerm] = useState('');
   const [selectedTags, setSelectedTags] = useState({
     ingredients: [],
     appliances: [],
@@ -17,9 +18,13 @@ export default function Home() {
   const [filteredRecipes, setFilteredRecipes] = useState(recipesData);
 
   useEffect(() => {
-    const filtered = filterRecipesByTags(recipesData, selectedTags);
+    const filtered = performCompleteSearch(recipesData, searchTerm, selectedTags);
     setFilteredRecipes(filtered);
-  }, [selectedTags]);
+  }, [searchTerm, selectedTags]);
+
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
 
   const handleTagSelect = (category, tag) => {
     setSelectedTags(prev => {
@@ -41,7 +46,10 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Header />
-      <Hero />
+      <Hero 
+        onSearch={handleSearch} 
+        searchTerm={searchTerm}
+      />
       <FilterTags
         filteredRecipes={filteredRecipes}
         totalRecipes={filteredRecipes.length}

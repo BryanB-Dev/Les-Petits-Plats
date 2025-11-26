@@ -1,7 +1,7 @@
 import SearchBar from '../../search/SearchBar';
 import styles from './Hero.module.css';
 
-export default function Hero() {
+export default function Hero({ onSearch, searchTerm }) {
   return (
     <section className={styles.hero}>
       <div className={styles.heroContent}>
@@ -9,7 +9,7 @@ export default function Hero() {
           <h1>DÉCOUVREZ NOS RECETTES<br />DU QUOTIDIEN,SIMPLES ET DÉLICIEUSES</h1>
         </div>
         <div className={styles.searchWrapper}>
-          <SearchBar />
+          <SearchBar onSearch={onSearch} searchTerm={searchTerm} />
         </div>
       </div>
     </section>
