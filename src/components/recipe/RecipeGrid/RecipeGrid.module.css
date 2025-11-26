@@ -1,13 +1,12 @@
 .gridContainer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem 2rem;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 66px 48px;
 }
 
 .noResults {

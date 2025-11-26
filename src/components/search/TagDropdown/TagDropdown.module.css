@@ -9,12 +9,13 @@
   padding: 17px 16px;
   font-size: 16px;
   font-weight: 500;
+  font-style: medium;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
   width: 195px;
-  height: 53px;
+  height: 56px;
   box-sizing: border-box;
   justify-content: space-between;
   transition: all 0.2s ease;
