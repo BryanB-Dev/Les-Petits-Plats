@@ -1,10 +1,9 @@
 .header {
     display: flex;
     max-width: 1200px;
-    margin: 0 auto;
-    gap: 133px;
-    padding: 0 1rem;
-    margin-top: 65px;
+    margin: 0 90px;
+    gap: 82px;
+    margin-top: 70px;
 }
 
 .imageContainer {
@@ -44,6 +43,7 @@
 .timeLabel {
     font-size: 16px;
     color: #7A7A7A;
+    letter-spacing: 9%;
     font-weight: 500;
     display: block;
     margin-bottom: 5px;
@@ -61,6 +61,7 @@
 
 .sectionTitle {
     font-size: 16px;
+    letter-spacing: 9%;
     color: #7A7A7A;
     font-weight: 700;
     margin: 0 0 15px 0;
