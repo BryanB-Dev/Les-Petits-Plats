@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-              url('/hero-image.jpg') center/cover no-repeat;
+              url('/hero-image.jpg') 50% 70%/cover no-repeat;
   height: 667px;
   display: flex;
   flex-direction: column;
@@ -14,18 +14,15 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 1rem;
-  gap: 46px;
+  gap: 30px;
 }
 
 .heroText h1 {
   font-family: 'Anton', sans-serif;
   font-size: 44px;
   font-weight: 400;
-  line-height: 1.5;
   margin: 0;
   color: #FFD15B;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 897px;
 }
 
